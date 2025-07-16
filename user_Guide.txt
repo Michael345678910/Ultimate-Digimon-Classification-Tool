@@ -1,0 +1,180 @@
+***Comprehensive User Guide for Digimon Stage Prediction & Team Creation Program***
+
+
+**Requirements for this application to work:**
+
+- Pycharm Community 2025.1
+- Python=3.11
+
+** Add the following libraries below to a text file (.txt) titled "requirements.txt": **
+- pandas~=2.3.0
+- scikit-learn~=1.7.0
+- joblib~=1.5.1
+- matplotlib~=3.10.3
+- seaborn~=0.13.2
+- colorama~=0.4.6
+
+
+Introduction To The Application:
+
+
+This application allows you to:
+- Train a model to predict if a Digimon is at the Ultimate stage.
+- Use this model to predict for Digimon based on their stats.
+- Lookup Digimon by name, or their stats, and classify if their stage is Ultimate or not.
+- Manage a team of Digimon, add/remove Digimon from the team, classify the teams stages to see their stats, and if they're an Ultimate Digimon or not.
+- Generate visuals such as histograms, scatter plots, and confusion matrices to deepen the understanding about the data and model performance.
+
+
+
+**First-Time Setup:**
+
+
+- To start this program and download all the files and libraries needed, you will need to have the requirements.txt, and the other files in this program downloaded to your personal PC and ready for use.
+- Once that is done, you will need to open the terminal in Pycharm, after selecting the folder Digimon_Tournament.
+- Then, once in the terminal, for Windows you will enter: venv\Scripts\activate
+- OR for Mac/Linux you will enter: source venv/bin/activate
+- Next, you will type in to the terminal: pip install -r requirements.txt
+- Then you will wait until you start to see "Successfully installed package1, package2, package3, ..."
+
+
+**Training The Model:**
+
+
+- Run the Python script `train_Model.py`.
+- It loads your dataset, creates `'is_ultimate'`, selects stats at level 50, and trains a Random Forest classifier.
+- The trained model is saved as `models/ultimate_stage_model.pkl`.
+- This trained model is used for predictions later.
+- Once this is done, you are ready to use this application.
+
+
+
+**Using the Main Application (`main.py`):**
+
+
+- Run the Python script `main.py`.
+- After that has been run, you'll get to the main menu options.
+
+Main Menu Options:
+
+Upon starting the program, you'll see the following options to select from:
+
+- 1: Check if a Digimon is Classified as an Ultimate
+- 2: Search for a Digimon by its Name
+- 3: Open the Team Management Menu
+- 0: Exit the Program
+
+- Please type the number that relates to your selection (from 0 to 3):
+
+
+Next, you will need to choose an option by entering the respective number to what you are wanting to utilize within the program.
+
+
+***Option 1: Check if a Digimon is Classified as an Ultimate via stats***
+
+- The purpose of option 1 is to allow users to manually input a Digimon's stats into the Command Line Interface to have the model predict if the Digimon's entered stats indicate that the Digimon is an Ultimate or not.
+
+**Step by Step on How to Use Option 1**
+
+1. Input `1` from the main menu into the Command Line Interface.
+2. Then you will need to enter each stat (HP, Attack, Defense, Special Attack, Special Defense, Speed) an integer form only for the Digimon at level 50 when prompted into the Command Line Interface.
+3. Then the program will use the trained model based off of level 50 Digimons to classify whether the inputted Digimon's stats is **Ultimate** or not.
+4. The application then displays the prediction in the Command Line Interface.
+5. After the prediction is displayed, the application will bring you back to the start of entering each stat, where you can enter 0 to go back to the main menu, or enter another Digimon by its stats.
+
+### **Note:**
+
+- To return to the main menu during this step, type `0` when prompted for stats.
+- If you enter a letter into the Command Line Interface in the step to enter the stats of a Digimon, you'll get an error message stating that there was an invalid input, and to try again utilizing integers only.
+
+
+
+***Option 2: Search for a Digimon by its Name and check to see if it's classified as an Ultimate***
+
+- The purpose of option 2 is to enter a Digimon's name to see its stats, type, and predict whether it's **Ultimate** with the model.
+
+**Step by Step on How to Use Option 2**
+
+1. Input `2` from the main menu into the Command Line Interface.
+2. Afterward, the application will prompt for you to enter the Digimon's name exactly as it appears from the dataset into the Command Line Interface.
+3. The system will then use the trained model to show whether the Digimon’s been found to be an Ultimate or not.
+5. After the application displays if the Digimon entered is Ultimate or not, the application will bring you back to the start of entering a Digimon's name, where you can enter 0 to go back to the main menu, or enter another Digimon to see if it is Ultimate or not.
+
+### **Note:**
+
+- To return to the main menu during this step, type `0` when prompted for stats.
+- If the Digimon is not found, you'll get an error message stating to try a different name.
+- If you enter a number you will receive an error message asking for you to try again and to enter a valid Digimon's name only.
+
+
+
+***Option 3: Open the Team Management Menu***
+
+- The purpose of option 3 within the program is to build a team of Digimon by name or stats, with an option to clear the team created if desired; view the team created showing their stats, or view the Digimon on the team that are Ultimates.
+
+**Descriptive How-To-Use for each Sub-Option Within Option 3**
+
+### **Main Sub-Options**
+
+
+1. **Add a Digimon To The Team By Their Name:** -- After selecting this option, it will prompt you to enter the Digimon's name into the Command Line Interface, the system retrieves the Digimon's stats from the dataset, and stores it for you in the team.
+2. **Add a Digimon To The Team By Entering Stats Manually:** -- Once this option has been chosen, the program will prompt you to enter a nickname or the name of the Digimon you will be entering manually. Then it asks you to input the Digimon's stats and afterward stores it for you in the team.
+3. **View Your Current Team And The Digimon's Stats:** -- If this option is entered into the Command Line Interface, it will then list the current Digimon that is in your team with their assigned stats.
+4. **Determine How Many Digimon Are Classified As Ultimates' Within Your Team:** -- This input determines how many Digimon are classified as Ultimate within your team.
+5. **Clear Your Entire Team:** -- If this input is entered into the Command Line Interface, it will double-check that you want to remove all the Digimon that is currently stored in the team. If y is entered, they will be cleared; if anything else is entered (other than 0), it returns you to the team management menu.
+0. **Return To The Applications Main Menu** -- This option will bring you back to the main menu within the program.
+
+### **Note:**
+
+- You can only have 6 Digimon on a team at one time, if more than 6 are detected, it will inform you and ask you to clear your team and start again.
+- Even though this feature has proper error handling for each sub-option, ensure correct stat input and enter the correct Digimon names for accurate results.
+- This feature uses the same prediction method as Option 1, but for the Digimon added within the team.
+- To return to the main menu or go back during this step, type `0` when prompted.
+
+***Option 0: Exit the Program***
+
+- After selecting 0, the application will, display a friendly goodbye message:
+- "Goodbye, Tamer! Thanks for using the Digimon classifier."
+- Then the application closes providing the user with a clean exit and a friendly themed farewell, ensuring the user knows they've exited successfully.
+
+
+
+***Visualizations User Guide for Digimon Dataset***
+
+
+
+**Introduction To Visualization Generation**
+
+
+This part of the application enables you to:
+- Produce visual insights from the Digimon dataset using 3 differing charts.
+- Visualize speed distribution of all the Digimon at level 50 in the dataset.
+- Compare the attack and defense stats of all Digimon through a scatter plot, color-coded by if the Digimon's stage is Ultimate or not.
+- Evaluate the model's performance in classifying the Ultimate stage using a confusion matrix.
+
+### **Note:**
+
+- This feature's visuals uses all the Digimon within the dataset obtained from the game Digimon Cyber Sleuth.
+
+
+**Setup & Execution For Visuals**
+
+- Run the Python script `generate_Visuals.py`.
+- This will then generate a generated_Images/folder within the visuals folder both inside the Digimon_Tournament project folder. Then the script will process the data and output images in the generated_Images/ directory.
+- Once this is done, you are ready to view the generated visuals found in the generated_Images/folder.
+
+
+
+**Details of Generated Visuals**
+
+1. Speed Distribution Histogram:
+ - Purpose: This histogram plot illustrates the frequency of speed values for the Digimon in the dataset at level 50.
+ - Output File: generated_Images/speed_Distribution_Histogram.png
+
+2. Attack Vs. Defense by Stage Scatterplot:
+ - Purpose: Showcases the relationship between attack and defense stats utilizing a color coded Scatterplot for classification, distinguishing Digimon's by their Ultimate stage (1 for Ultimate and 0 for Not Ultimate).
+ - Output File: generated_Images/attack_Vs_Defense.png
+
+3. Confusion Matrix Visualization
+ - Purpose: Analyzes through a confusion matrix, how well the Random Forest model classifies Digimon's based on if they belong to the Ultimate stage or not; presenting correct and incorrect classification rates of the stages in the matrix.
+ - Output File: generated_Images/confusion_Matrix.png
