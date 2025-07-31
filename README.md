@@ -38,7 +38,7 @@ Ensure that Python 3.11 is installed inside of a runable IDE (Such as PyCharm).
 Train the model by running the train_Model.py file.
 This will generate and save a trained classifier (ultimate_stage_model.pkl) into a new folder titled "models" within the Digimon_Tournament folder.
 
-## Running the main Program:
+## Running the Main Program:
 
 Start the application by running the main.py file.
 
