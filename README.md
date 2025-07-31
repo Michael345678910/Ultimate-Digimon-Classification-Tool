@@ -21,7 +21,7 @@ Easy setup and execution for data analysis, modeling, and predictions.
 # First-Time Setup & Installation For The Application:
 
 Clone this repository.
-Ensure that Python 3.11 is installed inside of a runable IDE (Such as PyCharm).
+Ensure that Python 3.11 is installed inside of a runnable IDE (Such as PyCharm).
 
 - To start this program and download all the files and libraries needed, you will need to have the requirements.txt and the other files in this program downloaded to your personal PC and ready for use.
 - Make sure the dataset (Digimon.csv), model, and scripts are in the correct directories as specified in the user_Guide.txt document.
