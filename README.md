@@ -38,7 +38,7 @@ Ensure that Python 3.11 is installed inside of a runable IDE (Such as PyCharm).
 Train the model by running the train_Model.py file.
 This will generate and save a trained classifier (ultimate_stage_model.pkl) into a new folder titled "models" within the Digimon_Tournament folder.
 
-## Running the main Program
+## Running the main Program:
 
 Start the application by running the main.py file.
 
@@ -50,14 +50,14 @@ Use the menu options:
 
 **For a more detailed and in-depth walkthrough of each of the menu options, please view the user_Guide.txt file and begin reading from the **Using the Main Application (`main.py`):** section.**
 
-## Visualizations
+## Visualizations:
 Generate the visuals by running the generate_Visuals.py file.
 Then, a new folder inside the "visuals" folder will be generated, titled "generated_Images". Inside this new folder, there will be 3 visual outputs, including a histogram, scatter plot, and confusion matrices.
 
-# Notes Regarding Contributing To The Code
+# Notes Regarding Contributing To The Code:
 Contributions are welcome! Please feel free to fork the repository, make your modifications or add new features, and submit a pull request.
 
-# Licensing and Trademarks
+# Licensing and Trademarks:
 This project is for educational purposes and is not intended for commercial use.
 
 Note: Digimon is a registered trademark of Kabushiki Kaisha Bandai, or Bandai Co., Ltd., and all rights are reserved by Kabushiki Kaisha Bandai/Bandai Co., Ltd.
