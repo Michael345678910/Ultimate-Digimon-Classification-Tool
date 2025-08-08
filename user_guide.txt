@@ -30,7 +30,11 @@ This application allows you to:
 **First-Time Setup:**
 
 
-- Ensure that the file paths are in the correct directories as shown in the Application File Path Tree section.
+*Important: Ensure that the entire folder structure remains intact as shown in the "Application File Path Tree" section. The application relies on relative paths within this structure to locate files such as datasets, models, and visual outputs.*
+*Important: Before running any scripts, make sure that you have your virtual environment activated. (This ensures all required libraries are available and correctly used during execution.)*
+
+
+- Ensure that the file paths are in the correct directories as shown in the Application File Path Tree section. The scripts rely on relative paths to locate data, models, and output folders. Keeping this structure intact ensures all file references work correctly.
 - To start this program and download all the files and libraries needed, you will need to have the requirements.txt and the other files in this program downloaded to your personal PC and ready for use.
 - Once that is done, you will need to open the terminal in PyCharm, after selecting the folder Digimon_Tournament.
 - Then, once in the terminal, for Windows, you will enter: venv\Scripts\activate
@@ -54,6 +58,14 @@ This application allows you to:
       | --- train_Model.py
       | --- user_Guide.txt
       | --- requirements.txt
+|
+   \modules\
+      | --- __init__.py
+      | --- main_display.py
+      | --- data_handling.py
+      | --- model_utilities.py
+      | --- team_management.py
+      | --- utils.py
 |
    \data\
       | --- Digimon.csv
@@ -83,11 +95,12 @@ This application allows you to:
 
 
 
-**Using the Main Application (`main.py`):**
+**Running the Application (`main.py`):**
 
 
-- Run the Python script `main.py`.
-- After that has been run, you'll get to the main menu options.
+*Important: You must run train_Model.py first to train and save the model. Without this step, the classifier features in main.py will not work because the trained model file won't exist.*
+
+- Running main.py will start the core application, presenting the main menu options for Ultimate status predictions and team management.
 
 Main Menu Options:
 
