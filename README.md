@@ -12,19 +12,19 @@ Designed with ease of use in mind, this project combines data handling, machine 
 
 # Features:
 
-Trains a Random Forest classifier model to predict if a Digimon's stage is Ultimate, utilizing each Digimon's stats at level 50.
-Uses the command-line interface (CLI) as the interface between the user and the program, allowing the user to input stats, name-based queries, enter the Team Management Menu, or enter any other entry into the program's console.
-Allows the user to manage a team of up to six Digimon: add by name or manually input stats, view the team, classify whether the Digimon in a team are Ultimate or not, and clear the user's team.
-Generate data visualizations, including a histogram, scatter plot, and confusion matrices, to visualize data distributions and model performance.
-Easy setup and execution for data analysis, modeling, and predictions.
+- Trains a Random Forest classifier model to predict if a Digimon's stage is Ultimate, utilizing each Digimon's stats at level 50.
+- Uses the command-line interface (CLI) as the interface between the user and the program, allowing the user to input stats, search by name, access the Team Management Menu, or select other options in the console.
+- Allows the user to manage a team of up to six Digimon: add by name, manually input stats, view team details, classify team members' stages, or clear the team.
+- Generate data visualizations, including a histogram, scatter plot, and confusion matrices, to visualize data distributions and model performance.
+- Easy setup and execution for data analysis, modeling, and predictions.
 
 # First-Time Setup & Installation For The Application:
 
 Clone this repository.
 Ensure that Python 3.11 is installed inside of a runnable IDE (Such as PyCharm).
 
-- To start this program and download all the files and libraries needed, you will need to have the requirements.txt and the other files in this program downloaded to your personal PC and ready for use.
-- Make sure the dataset (Digimon.csv), model, and scripts are in the correct directories as specified in the user_Guide.txt document.
+- To start this program and download all the files and libraries needed, ensure that the requirements.txt and the other files are placed in the correct directories as specified in the "Application File Path Tree".
+- Make sure the dataset (Digimon.csv), model, and scripts are in the correct directories as specified in the user_Guide.txt document "Application File Path Tree" structure.
 - Once that is done, you will need to open the terminal in PyCharm, after selecting the folder Digimon_Tournament.
 - Then, once in the terminal, for Windows, you will enter: venv\Scripts\activate
 - OR for Mac/Linux, you will enter: source venv/bin/activate
@@ -45,7 +45,7 @@ Start the application by running the main.py file.
 Use the menu options:
 1. To input stats manually and predict the Ultimate status.
 2. To search for a Digimon by name and view the Ultimate status prediction.
-3. To access the team management menu (add, view, classify, clear).
+3. To access the Team Management Menu (add, view, classify, clear).
 0. To exit the application or go back to a menu.
 
 **For a more detailed and in-depth walkthrough of each of the menu options, please view the user_Guide.txt file and begin reading from the **Using the Main Application (`main.py`):** section.**
