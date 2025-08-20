@@ -19,7 +19,7 @@ Designed with ease of use in mind, this project combines data handling, machine 
 - Easy setup and execution for data analysis, modeling, and predictions.
 
 # File Pathway Tree/ File Directory:
-Please check the File Pathway Tree File found in this project.
+Please check the File Pathway Tree File found in this project's repository.
 
 # First-Time Setup & Installation For The Application:
 
