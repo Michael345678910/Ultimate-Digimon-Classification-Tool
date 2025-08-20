@@ -18,6 +18,36 @@ Designed with ease of use in mind, this project combines data handling, machine 
 - Generate data visualizations, including a histogram, scatter plot, and confusion matrices, to visualize data distributions and model performance.
 - Easy setup and execution for data analysis, modeling, and predictions.
 
+# File Pathway Tree/ File Directory:
+\Digimon_Tournament\
+      | --- main.py
+      | --- train_Model.py
+      | --- user_Guide.txt
+      | --- requirements.txt
+|
+   \modules\
+      | --- __init__.py
+      | --- main_display.py
+      | --- data_handling.py
+      | --- model_utilities.py
+      | --- team_management.py
+      | --- utils.py
+|
+   \data\
+      | --- Digimon.csv
+      |--- team.json
+|
+   \models\
+      | --- ultimate_stage_model.pkl
+|
+   \visuals\
+      | --- generate_Visuals.py
+      |
+         \generated_Images\
+            | --- attack_Vs_Defense.png
+            | --- confusion_Matrix.png
+            | --- speed_Distribution_Histogram.png
+
 # First-Time Setup & Installation For The Application:
 
 Clone this repository.
