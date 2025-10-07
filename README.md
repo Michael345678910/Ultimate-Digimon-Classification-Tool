@@ -20,28 +20,28 @@ Designed with ease of use in mind, this project combines data handling, machine 
 
 # Current Finished Product Images:
 
-### Application Startup Screen 
+### Application Startup Screen:
 ![Startup Screen – Ultimate Digimon Classification Tool](ReadMe_File_Images/Classification_Tool_Start_Up.png)
 
-### Option 1 – Classify a Digimon via Stats 
+### Option 1 – Classify a Digimon via Stats:
 ![Option 1 – Check if a Digimon is Ultimate via Stats](ReadMe_File_Images/Classification_Tool_Option_Track_1.png)
 
-### Option 2 – Search by Digimon Name 
+### Option 2 – Search by Digimon Name:
 ![Option 2 – Search Digimon by Name and Classification Result](ReadMe_File_Images/Classification_Tool_Option_Track_2.png)
 
-### Option 3 – Team Management Menu 
+### Option 3 – Team Management Menu:
 ![Option 3 – Open Team Management Menu](ReadMe_File_Images/Classification_Tool_Option_Track_3_Menu.png)
 
-### Option 3.1 & 3.2 – Add Team Members 
+### Option 3.1 & 3.2 – Add Team Members: 
 ![Add Digimon To The Team By Name Or By Stats](ReadMe_File_Images/Classification_Tool_Option_Track_3_Option_1&2.png)
 
-### Option 3.3 & 3.4 – View and Classify Team Members 
+### Option 3.3 & 3.4 – View and Classify Team Members: 
 ![View stats and Classify Added Digimon](ReadMe_File_Images/Classification_Tool_Option_Track_3_Option_3&4.png)
 
-### Option 3.5 – Clear or Reset Team 
+### Option 3.5 – Clear or Reset Team: 
 ![Clear or Reset Team](ReadMe_File_Images/Classification_Tool_Option_Track_3_Option_5.png)
 
-### Exit and Program Wrap-Up 
+### Exit and Program Wrap-Up: 
 ![Application Exit/End Program](ReadMe_File_Images/Classification_Tool_End.png)
 
 # File Pathway Tree/ File Directory:
