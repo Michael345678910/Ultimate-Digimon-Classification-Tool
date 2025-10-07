@@ -10,6 +10,14 @@ The application offers an intuitive command-line interface (CLI) that enables us
 
 Designed with ease of use in mind, this project combines data handling, machine learning, user interaction, and visualization tools within a single, accessible platform. Whether you wish to explore Digimon data, apply machine learning models, or experiment with data visualization, this project provides a flexible and educational experience.
 
+# Features:
+
+- Trains a Random Forest classifier model to predict if a Digimon's stage is Ultimate, utilizing each Digimon's stats at level 50.
+- Uses the command-line interface (CLI) as the interface between the user and the program, allowing the user to input stats, search by name, access the Team Management Menu, or select other options in the console.
+- Allows the user to manage a team of up to six Digimon: add by name, manually input stats, view team details, classify team members' stages, or clear the team.
+- Generate data visualizations, including a histogram, scatter plot, and confusion matrices, to visualize data distributions and model performance.
+- Easy setup and execution for data analysis, modeling, and predictions.
+
 # Current Finished Product Images:
 
 ### Application Startup Screen 
@@ -35,14 +43,6 @@ Designed with ease of use in mind, this project combines data handling, machine 
 
 ### Exit and Program Wrap-Up 
 ![Application Exit/End Program](ReadMe_File_Images/Classification_Tool_End.png)
-
-# Features:
-
-- Trains a Random Forest classifier model to predict if a Digimon's stage is Ultimate, utilizing each Digimon's stats at level 50.
-- Uses the command-line interface (CLI) as the interface between the user and the program, allowing the user to input stats, search by name, access the Team Management Menu, or select other options in the console.
-- Allows the user to manage a team of up to six Digimon: add by name, manually input stats, view team details, classify team members' stages, or clear the team.
-- Generate data visualizations, including a histogram, scatter plot, and confusion matrices, to visualize data distributions and model performance.
-- Easy setup and execution for data analysis, modeling, and predictions.
 
 # File Pathway Tree/ File Directory:
 Please check the File Pathway Tree File found in this project's repository.
